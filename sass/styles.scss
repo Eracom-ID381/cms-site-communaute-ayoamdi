@@ -1,6 +1,11 @@
 @import "_includes/reset.scss";
 @import "_includes/variables.scss";
 @import "_includes/mixins.scss";
+@font-face {
+	font-family: 'Helvetica Neue';
+	//font-weight: normal;
+	//font-style: normal;
+}
 
 header {
 	background: rgba(252, 62, 158);
@@ -18,6 +23,7 @@ main {
 	//justify-items: center;
 	//align-items: center;
 	//grid-gap: 1rem;
+	font-family: 'Helvetica Neue', sans-serif;
 }
 
 .image-section {
@@ -31,8 +37,69 @@ main {
 .text-section {
 	padding: 1rem;
 }
+//footer {
+//background: rgba(252, 62, 158);
+//height: 100px;
+//}
 
-footer {
-	//background: rgba(252, 62, 158);
-	//height: 100px;
+.first-section {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	// grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin-top: 5rem;
+	// margin-right: 5rem;
+	// margin-left: 5rem;
+	justify-items: center;
+
+	.text-first-line {
+		font-weight: bold;
+		font-size: 70px;
+		filter:blur(5px);
+	}
+
+	.text-first-line:hover {
+		filter:blur(0px);
+	}
+
+	.text-second-line {
+		font-weight: bold;
+		font-size: 50px;
+		filter:blur(6px);
+	}
+
+	.text-second-line:hover {
+		filter:blur(0px);
+	}
+
+	.text-third-line {
+		font-weight: bold;
+		font-size: 30px;
+		filter:blur(7px);
+	}
+
+	.text-third-line:hover {
+		filter:blur(0px);
+	}
+
+	.text-fourth-line {
+		font-weight: bold;
+		font-size: 18px;
+		filter:blur(8px);
+	}
+
+	.text-fourth-line:hover {
+		filter:blur(0px);
+	}
+
+	.text-fifth-line {
+		font-weight: bold;
+		font-size: 20px;
+		filter:blur(9px);
+	}
+
+	.text-fifth-line:hover {
+		filter:blur(0px);
+	}
 }
