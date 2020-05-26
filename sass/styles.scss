@@ -103,3 +103,27 @@ main {
 		filter:blur(0px);
 	}
 }
+
+.second-section {
+	width: 100vw;
+	height: 50vh;
+	color: white;
+
+	.img1 {
+		object-fit: cover;
+		width: 100vw;
+		height: 50vh;
+		position: absolute;
+		z-index: -1;
+		animation: blur 2s ease;
+	}
+	@keyframes blur {
+		100% {
+			transform: blur(8px);
+		}
+
+		0% {
+			transform: blur(0px);
+		}
+	}
+}
