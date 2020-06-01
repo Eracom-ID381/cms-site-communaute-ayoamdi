@@ -7,6 +7,10 @@
 	//font-style: normal;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 header {
 	background: rgba(252, 62, 158);
 	height: 100px;
@@ -52,11 +56,13 @@ main {
 	// margin-right: 5rem;
 	// margin-left: 5rem;
 	justify-items: center;
+	color: $primary-color;
 
 	.text-first-line {
 		font-weight: bold;
 		font-size: 70px;
 		filter:blur(5px);
+		color: $primary-color;
 	}
 
 	.text-first-line:hover {
@@ -67,6 +73,8 @@ main {
 		font-weight: bold;
 		font-size: 50px;
 		filter:blur(6px);
+		text-decoration: none;
+		color: $primary-color;
 	}
 
 	.text-second-line:hover {
@@ -77,6 +85,8 @@ main {
 		font-weight: bold;
 		font-size: 30px;
 		filter:blur(7px);
+		color: $primary-color;
+		text-decoration: none;
 	}
 
 	.text-third-line:hover {
@@ -87,6 +97,8 @@ main {
 		font-weight: bold;
 		font-size: 18px;
 		filter:blur(8px);
+		color: $primary-color;
+		text-decoration: none;
 	}
 
 	.text-fourth-line:hover {
@@ -97,6 +109,8 @@ main {
 		font-weight: bold;
 		font-size: 20px;
 		filter:blur(9px);
+		color: $primary-color;
+		text-decoration: none;
 	}
 
 	.text-fifth-line:hover {
@@ -108,6 +122,7 @@ main {
 	width: 100vw;
 	height: 50vh;
 	color: white;
+	display: grid;
 
 	.img1 {
 		object-fit: cover;
@@ -115,7 +130,7 @@ main {
 		height: 50vh;
 		position: absolute;
 		z-index: -1;
-		animation: blur 2s ease;
+		filter:blur(5px);
 	}
 	@keyframes blur {
 		100% {
@@ -126,4 +141,29 @@ main {
 			transform: blur(0px);
 		}
 	}
+
+	.mini-text {
+		margin-left: 500px;
+		margin-right: 500px;
+		font-size: 5px;
+	}
+
+	input:checked .img1 {
+		animation: blur 2s ease;
+	}
+
+	input {}
+
+	.container .checkmark {
+		margin-right: 10px;
+	}
+}
+
+.top-text {
+	text-align: center;
+	font-size: 50px;
+}
+
+.sous-top-text {
+	text-align: center;
 }
