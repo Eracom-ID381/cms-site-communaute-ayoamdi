@@ -123,6 +123,7 @@ main {
 	height: 50vh;
 	color: white;
 	display: grid;
+	grid-template-columns: repeat(3,1fr);
 
 	.img1 {
 		object-fit: cover;
@@ -146,6 +147,7 @@ main {
 		margin-left: 500px;
 		margin-right: 500px;
 		font-size: 5px;
+		grid-column: span 3;
 	}
 
 	input:checked .img1 {
@@ -162,8 +164,29 @@ main {
 .top-text {
 	text-align: center;
 	font-size: 50px;
+	grid-column: span 3;
 }
 
 .sous-top-text {
 	text-align: center;
+	grid-column: span 3;
+}
+
+.third-section {
+	width: 100vw;
+	height: 150vh;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+
+	.col-1 .col-2 .col-3 {
+		grid-column: span 1;
+	}
+
+	.nom {
+		color: $primary-color;
+	}
+
+	.nom-invert {
+		color: $primary-color-invert;
+	}
 }
