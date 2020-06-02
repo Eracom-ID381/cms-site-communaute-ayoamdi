@@ -54,9 +54,16 @@
 		<section class="second-section" id="rejoinsnous">
 			<img class="img1" id="img1" src="assets/images/autorefractor-barn.jpg" alt="">
 			<div class="top-text">REJOINS NOUS</div>
+
 			<div class="sous-top-text">ABONNE-TOI A LA NEWSLETTER</div>
 
-			<div class="mini-text"> <label class="container"><input type="checkbox"><span class="checkmark"></span></label>En cliquant ici tu acceptes ta dysfonction de ton oeil ou de tes yeux et accepte également que ce site internet ne t'aidera cas
+
+			<div class="mini-text"> <label class="container">
+					<input type="checkbox" id="myCheck" onclick="unblur">
+					<span class="checkmark"></span></label>
+				En cliquant ici tu acceptes ta dysfonction de ton oeil ou de tes yeux et accepte également que ce
+				site
+				internet ne t'aidera cas
 				à résoudre ce problème mais tu
 				convient tout de même à
 				recevoir des newsletter que tu
@@ -64,7 +71,7 @@
 			</div>
 			<img class="img1" id="img1" src="assets/images/autorefractor-barn.jpg" alt="">
 
-			<!--INTEGRER UNE CHECK BOX QUI UNE FOIS CLIQUÉ L'IMAGE EN BG DEVIENDRA NET-->
+
 		</section>
 
 		<section class="third-section" id="membres">
@@ -96,11 +103,13 @@
 		</section>
 
 		<section class="fourth-section" id="partage">
+			<div class="top-text">ZONE DE PARTAGE</div>
 			<div class="col-1"></div>
 			<div class="col-1"></div>
 		</section>
 
 		<section class="fifth-section" id="faq">
+			<div class="top-text">F.A.Q.</div>
 			<div class="q-first-line"></div>
 			<div class="a-first-line"></div>
 			<div class="q-second-line"></div>
@@ -133,6 +142,18 @@
 		ga('create', 'UA-XXXXX-Y', 'auto');
 		ga('set', 'transport', 'beacon');
 		ga('send', 'pageview')
+
+
+		function unblur() {
+			var checkbox = document.getElementById("myCheck");
+			var img1 = document.getElementById("img1");
+			if (checkbox.checked == true) {
+				img1.style.filter = "blur(0px)";
+			} else {
+				img1.style.filter = "blur(6px)";
+			}
+			console.log("img1");
+		}
 	</script>
 	<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
